@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Aleo", serif;
+    list-style-type: none;
+}
+
+body {
+    background-image: url("./wall6.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.backdrop-bg {
+    width: 350px;
+    height: 680px;
+    background-color: rgba(150, 150, 150, 0.23);
+    z-index: 1;
+    backdrop-filter: blur(6px);
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgb(2, 2, 2);
+}
+
+.menu-cont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: white;
+    border-radius: inherit;
+    padding: 1.5rem;
+    display:  grid;
+    grid-template-rows: 1fr 2.5fr 1fr;
+}
+
+.mob-header {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+
+.mob-main {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.24);
+    padding-top: 1.5rem;
+}
+
+.header-profcont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-textcont {
+    line-height: 26px ;
+}
+
+.hello {
+    font-size: 15px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.profile-img {
+    background-color: white;
+    width: 55px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-image: url("./dani.JPG");
+    background-size: cover;
+    border: 2px solid whitesmoke;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+li {
+    height: 2.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 20px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+li p {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.active {
+    background-color: rgba(187, 187, 187, 0.342);
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 8px;
+}
+
+.circles div {
+    width: 13px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.circle-red {
+    background-color: rgb(221, 54, 54);
+}
+
+.circle-yellow {
+    background-color: rgb(218, 218, 56);
+}
+
+.circle-green {
+    background-color: rgb(43, 167, 43);
+}
+
+.mob-foot {
+    padding-top: 1.5rem;
+}
+
+.input-cont {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: rgb(228, 228, 228);
+    border-radius: 14px;
+}
+
+.addbutton-cont {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.addbutton {
+    width: 60%;
+    aspect-ratio: 1;
+    background-color: rgb(68, 68, 216);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 50%;
+    line-height: 0;
+    position: relative;
+}
+
+.addbutton p {
+    position: absolute;
+    top: 16px;
+}
+
+
+input {
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+
+.mob-foot > p {
+    font-size: 13px;
+    margin-bottom: 1rem;
+}
