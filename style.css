@@ -218,3 +218,9 @@ input {
     font-size: 13px;
     margin-bottom: 1rem;
 }
+
+@supports not (backdrop-filter: blur(6px)) {
+    .backdrop-bg {
+        background-color: rgba(150, 150, 150, 0.5); /* Fallback background color */
+    }
+}
